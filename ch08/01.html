@@ -58,10 +58,21 @@
   footer a:hover {
     color: #ffffff;
   }
-  div[style*="background-image"] {
+  .border[style*="background-image"] {
     height: 250px;
     width: 550px;
   }
+  .card-title[style*="background-image"]
+  {
+    background-position: center center;
+    background-size: cover;
+    height: 370px;
+    width: 320px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
 </style>
 </head>
 <body>
@@ -77,7 +88,7 @@
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link active" aria-current="page" href="#">首頁</a></li>
             <li class="nav-item"><a class="nav-link" href="#feature">特色</a></li>
-            <li class="nav-item"><a class="nav-link" href="#content">內容</a></li>
+            <li class="nav-item"><a class="nav-link" href="#products">產品</a></li>
           </ul>
         </div>
       </div>
@@ -95,7 +106,7 @@
                 為你烤出最純粹的歐式麵包。</p>
           </div>
           <div class="col-lg-6">
-            <div class="border rounded  p-5 text-center" style="background-image: url(bread.jpg);" ">
+            <div class="border rounded  p-5 text-center" style="background-image: url(bread.jpg);" >
             </div>
           </div>
         </div>
@@ -112,7 +123,7 @@
           <div class="col-md-4">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">高纖維｜更有飽足感</h5>
+                <h5 class="fw-bold">高纖維｜更有飽足感</h5>
                 <p class="card-text">全麥、雜糧製作，促進消化，吃得久不易餓</p>
               </div>
               <div class="card-footer bg-transparent border-0">
@@ -123,7 +134,7 @@
           <div class="col-md-4">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">低油低糖｜少負擔</h5>
+                <h5 class="fw-bold">低油低糖｜少負擔</h5>
                 <p class="card-text">配方單純，熱量較低，身體更輕盈</p>
               </div>
               <div class="card-footer bg-transparent border-0">
@@ -134,7 +145,7 @@
           <div class="col-md-4">
             <div class="card h-100">
               <div class="card-body">
-                <h5 class="card-title">營養豐富｜自然原味</h5>
+                <h5 class="fw-bold">營養豐富｜自然原味</h5>
                 <p class="card-text">富含維生素與礦物質，吃得安心又健康</p>
               </div>
               <div class="card-footer bg-transparent border-0">
@@ -152,13 +163,13 @@
           <div class="col-lg-8">
             <div class="p-4 bg-white border rounded h-100">
               <h3 class="fw-bold">人氣商品</h3>
-              <p class="text-muted">原味鄉村麵包、核桃葡萄歐包、黑麥酸種麵包，都是每日現烤。</p>
+              <p class="text-muted">原味鄉村麵包、核桃葡萄歐包、黑麥酸種麵包，自然的滋味最美味。</p>
             </div>
           </div>
           <div class="col-lg-4">
             <div class="p-4 bg-white border rounded h-100">
               <h4 class="fw-bold">期間限定</h4>
-              <p class="text-muted">秋季限定南瓜歐包，數量有限，售完為止。</p>
+              <p class="text-muted">秋季限定南瓜歐包，使用新鮮南瓜泥製作。</p>
             </div>
           </div>
         </div>
@@ -166,13 +177,154 @@
     </section>
   </main>
 
+  <section id="products" class="py-5">
+  <div class="container">
+    <div class="text-center mb-5">
+      <h2 class="fw-bold">🍞 麵包產品介紹</h2>
+      <p class="text-muted">每日現烤，外酥內軟，挑一款今天想吃的口味吧！</p>
+    </div>
+
+    <div class="row g-4">
+      <!-- 1 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-country">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/yuanway.jpg);"></h5>
+            <h5>原味酸種麵包</h5>
+            <p class="card-text">天然酵母長時間發酵，成分單純無多餘添加，每天都適合的經典麵包。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-rye">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/blackmai.jpg);"></h5>
+            <h5>黑麥酸種麵包</h5>
+            <p class="card-text">酸香層次明顯，越嚼越香，黑麥高纖更好消化且低升糖。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 3 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-walnut">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/hertao.jpg);"></h5>
+            <h5>核桃葡萄歐包</h5>
+            <p class="card-text">核桃的營養脂肪酸，搭配葡萄乾自然甜味，口感豐富。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 4 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-garlic">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/swanway.png);"></h5>
+            <h5>蒜香奶油法國</h5>
+            <p class="card-text">濃郁蒜香配奶油，保留麥香本味。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 5 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-honey">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/honey.jpg);"></h5>
+            <h5>蜂蜜燕麥全麥</h5>
+            <p class="card-text">全麥麵粉與燕麥製作，富含膳食纖維，微甜蜂蜜香，自然有飽足感。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 6 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-cheese">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/cheese.jpg);"></h5>
+            <h5>起司黑胡椒恰巴達</h5>
+            <p class="card-text">起司蛋白質搭配黑胡椒提香，少油配方，鹹香不厚重。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 7 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-chocolate">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/duoduo.jpg);"></h5>
+            <h5>巧克力可可歐包</h5>
+            <p class="card-text">選用可可帶出微苦甜香，減糖配方不膩口，內含巧克力豆。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 8 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-cranberry">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/manyuemei.jpg);"></h5>
+            <h5>蔓越莓乳酪歐包</h5>
+            <p class="card-text">結合蔓越莓果酸與乳酪蛋白質，清爽少負擔。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 9 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-butter">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/naiyo.jpg);"></h5>
+            <h5>奶油餐包</h5>
+            <p class="card-text">低油配方、口感柔軟，保留單純奶香。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-red-bean">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/redbean.jpg);"></h5>
+            <h5>紅豆牛奶麵包</h5>
+            <p class="card-text">香甜紅豆配牛奶香麵糰，口感細緻。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 11 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-salt-croissant">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/yankesong.jpg);"></h5>
+            <h5>鹽可頌</h5>
+            <p class="card-text">外層酥脆、內層奶油香，鹹香平衡。</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12 -->
+      <div class="col-12 col-sm-6 col-lg-4" id="bread-pumpkin">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title" style="background-image: url(bread/pumpkin.jpg);"></h5>
+            <h5>秋季限定｜南瓜歐包</h5>
+            <p class="card-text">加入新鮮南瓜泥，濕潤鬆軟、帶自然甜味，限量販售。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
   <footer class="bg-dark text-white py-4">
     <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
-      <p class="mb-2 mb-md-0">&copy; 2026 Bootstrap 網站架構</p>
-      <div class="d-flex gap-3">
-        <a class="text-white text-decoration-none" href="#">隱私權政策</a>
-        <a class="text-white text-decoration-none" href="#">服務條款</a>
-      </div>
+      <p class="mb-2 mb-md-0">好吃麵包官方網站</p>
+  
     </div>
   </footer>
 
